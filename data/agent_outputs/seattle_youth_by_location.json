@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "generated_on": "2025-09-11",
+    "source": "Seattle Youth Programs Database",
+    "description": "Youth programs organized by Seattle neighborhoods and locations."
+  },
+  "locations": {
+    "Capitol Hill": [
+      {
+        "activity_name": "Creative Expressions: After-School Arts",
+        "age_range": "8-12 years",
+        "dates": {
+          "start": "2025-09-20",
+          "end": "2026-06-15"
+        }
+      }
+    ],
+    "South Seattle": [
+      {
+        "activity_name": "Seattle Youth Soccer League",
+        "age_range": "6-14 years",
+        "dates": {
+          "start": "2025-10-01",
+          "end": "2025-11-30"
+        }
+      }
+    ],
+    "Central Seattle": [
+      {
+        "activity_name": "STEM Explorers Club",
+        "age_range": "10-15 years",
+        "dates": {
+          "start": "2025-10-15",
+          "end": "2026-04-15"
+        }
+      }
+    ],
+    "Northwest Seattle": [
+      {
+        "activity_name": "Nature Navigators",
+        "age_range": "12-18 years",
+        "dates": {
+          "start": "2026-06-01",
+          "end": "2026-08-31"
+        }
+      }
+    ]
+  }
+}

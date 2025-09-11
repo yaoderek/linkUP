@@ -1,0 +1,95 @@
+[
+  {
+    "organization_name": "Seattle Art Center",
+    "program_description": "A series of after-school art programs for youth.",
+    "activity_name": "Creative Expressions: After-School Arts",
+    "activity_description": "Engage in painting, drawing, and mixed media projects to enhance artistic skills and self-expression.",
+    "location": {
+      "name": "Seattle Art Center",
+      "address": "123 Art St, Seattle, WA"
+    },
+    "age_range": "8-12 years",
+    "dates": {
+      "start_date": "2025-09-20",
+      "end_date": "2026-06-15"
+    },
+    "schedule": {
+      "days": [ "Mondays", "Wednesdays" ],
+      "times": "3:30 PM - 5:30 PM"
+    },
+    "cost": "$150",
+    "url": "http://www.seattleartcenter.org/creativeexpressions",
+    "tags": {
+      "categories": [ "Arts & Crafts", "Music & Performing Arts" ],
+      "demographics": [ "Ages 8-12", "All skill levels" ],
+      "accessibility": [ "Transportation available", "Wheelchair accessible" ],
+      "program_type": [ "After-School Program", "Seasonal" ]
+    },
+    "last_updated": {
+      "date": "2025-09-11",
+      "source_url": "http://www.seattleartcenter.org/youth"
+    }
+  },
+  {
+    "organization_name": "Seattle Youth Soccer League",
+    "program_description": "Local soccer leagues and training for young athletes.",
+    "activity_name": "Seattle Youth Soccer League",
+    "activity_description": "Join local youth to learn soccer skills, teamwork, and sportsmanship while participating in matches.",
+    "location": {
+      "name": "Jefferson Park",
+      "address": "4500 15th Ave S, Seattle, WA"
+    },
+    "age_range": "6-14 years",
+    "dates": {
+      "start_date": "2025-10-01",
+      "end_date": "2025-11-30"
+    },
+    "schedule": {
+      "days": [ "Saturdays" ],
+      "times": "10:00 AM - 12:00 PM"
+    },
+    "cost": "$75",
+    "url": "http://www.seattleyouthsoccer.org",
+    "tags": {
+      "categories": [ "Sports & Recreation", "Fitness" ],
+      "demographics": [ "Ages 6-14", "Inclusive to all skill levels" ],
+      "accessibility": [ "Special accommodations available", "Transportation support" ],
+      "program_type": [ "Ongoing", "Registration required" ]
+    },
+    "last_updated": {
+      "date": "2025-09-11",
+      "source_url": "http://www.seattleyouthsoccer.org/programs"
+    }
+  },
+  {
+    "organization_name": "Seattle Community Center",
+    "program_description": "Community-based programs covering a variety of interests.",
+    "activity_name": "STEM Explorers Club",
+    "activity_description": "Dive into exciting science experiments and technology projects that spark curiosity and innovation.",
+    "location": {
+      "name": "Seattle Community Center",
+      "address": "456 Community Ave, Seattle, WA"
+    },
+    "age_range": "10-15 years",
+    "dates": {
+      "start_date": "2025-10-15",
+      "end_date": "2026-04-15"
+    },
+    "schedule": {
+      "days": [ "Tuesdays", "Thursdays" ],
+      "times": "4:00 PM - 6:00 PM"
+    },
+    "cost": "$100",
+    "url": "http://www.seattlecommunitycenter.org/stemexplorers",
+    "tags": {
+      "categories": [ "Science & Technology", "Academic & Tutoring" ],
+      "demographics": [ "Ages 10-15", "Diverse cultural backgrounds" ],
+      "accessibility": [ "Accessible facilities", "Transportation assistance" ],
+      "program_type": [ "Ongoing", "Registration required" ]
+    },
+    "last_updated": {
+      "date": "2025-09-11",
+      "source_url": "http://www.seattlecommunitycenter.org/stem"
+    }
+  }
+]

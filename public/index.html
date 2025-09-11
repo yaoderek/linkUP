@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkUp! - Find Youth Opportunities</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 10 L30 30 L50 50 L70 30 Z' fill='%234ade80'/%3E%3Ccircle cx='50' cy='25' r='8' fill='%2322c55e'/%3E%3Ccircle cx='50' cy='75' r='4' fill='%234ade80'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Logo -->
+        <header class="header">
+            <img src="https://via.placeholder.com/200x60/4ade80/ffffff?text=LinkUp!" alt="LinkUp!" class="logo-image">
+            <p class="tagline">Connect youth with amazing opportunities in Seattle</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Search Section -->
+            <section class="search-section">
+                <div class="search-container">
+                    <div class="search-box">
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            placeholder="Search for activities, classes, or programs..."
+                            aria-label="Search for youth opportunities"
+                            autocomplete="off"
+                        >
+                        <button id="searchButton" aria-label="Search">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="search-suggestions">
+                        <span class="suggestion-label">Try:</span>
+                        <button class="suggestion-tag" data-query="art classes for kids">Art Classes</button>
+                        <button class="suggestion-tag" data-query="swimming lessons">Swimming</button>
+                        <button class="suggestion-tag" data-query="music lessons">Music</button>
+                        <button class="suggestion-tag" data-query="sports activities">Sports</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section">
+                <div id="loadingIndicator" class="loading hidden">
+                    <div class="spinner"></div>
+                    <p>Finding the best opportunities for you...</p>
+                </div>
+
+                <div id="noResults" class="no-results hidden">
+                    <div class="no-results-icon">🔍</div>
+                    <h3>No results found</h3>
+                    <p>Try adjusting your search terms or browse our suggestions above.</p>
+                </div>
+
+                <div id="resultsContainer" class="results-container">
+                    <!-- Results will be populated here -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 LinkUp! - Connecting Seattle's youth with opportunities</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

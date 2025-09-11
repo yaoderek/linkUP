@@ -1,0 +1,32 @@
+{
+  "_id": ObjectId("..."),
+  "organization_name": "...",
+  "program_description": "...",
+  "activity_name": "...",
+  "activity_description": "...",
+  "location": {
+    "name": "...",
+    "address": "..."
+  },
+  "age_range": "...",
+  "dates": {
+    "start_date": "YYYY-MM-DD",
+    "end_date": "YYYY-MM-DD"
+  },
+  "schedule": {
+    "days": [ "..." ],
+    "times": "..."
+  },
+  "cost": "...",
+  "url": "...",
+  "tags": {
+    "categories": [ "...", "..." ],
+    "demographics": [ "...", "..." ],
+    "accessibility": [ "...", "..." ],
+    "program_type": [ "...", "..." ]
+  },
+  "last_updated": {
+    "date": "YYYY-MM-DD",
+    "source_url": "..."
+  }
+}
