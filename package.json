@@ -1,0 +1,18 @@
+{
+  "name": "youth-connector-backend",
+  "version": "1.0.0",
+  "description": "Backend for LinkUp: imports opportunities into MongoDB and provides search APIs",
+  "main": "src/server/index.js",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "dev": "nodemon src/server/index.js",
+    "seed": "node src/server/db/seed.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
