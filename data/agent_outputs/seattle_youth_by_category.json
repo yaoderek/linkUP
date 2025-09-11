@@ -1,0 +1,50 @@
+
+{
+  "metadata": {
+    "generated_on": "2025-09-11",
+    "source": "Seattle Youth Programs Database",
+    "description": "Complete dataset of youth opportunities in Seattle organized by categories, age ranges, and locations."
+  },
+  "programs": [
+    {
+      "activity_name": "Creative Expressions: After-School Arts",
+      "age_range": "8-12 years",
+      "interest_categories": ["arts", "creative expression", "after-school"],
+      "location_tags": ["Seattle Art Center", "Capitol Hill"],
+      "dates": {
+        "start": "2025-09-20",
+        "end": "2026-06-15"
+      }
+    },
+    {
+      "activity_name": "Seattle Youth Soccer League",
+      "age_range": "6-14 years",
+      "interest_categories": ["sports", "soccer", "fitness"],
+      "location_tags": ["Jefferson Park", "South Seattle"],
+      "dates": {
+        "start": "2025-10-01",
+        "end": "2025-11-30"
+      }
+    },
+    {
+      "activity_name": "STEM Explorers Club",
+      "age_range": "10-15 years",
+      "interest_categories": ["STEM", "science", "technology", "hands-on learning"],
+      "location_tags": ["Seattle Community Center", "Central Seattle"],
+      "dates": {
+        "start": "2025-10-15",
+        "end": "2026-04-15"
+      }
+    },
+    {
+      "activity_name": "Nature Navigators",
+      "age_range": "12-18 years",
+      "interest_categories": ["outdoor", "environmental education", "teamwork"],
+      "location_tags": ["Discovery Park", "Northwest Seattle"],
+      "dates": {
+        "start": "2026-06-01",
+        "end": "2026-08-31"
+      }
+    }
+  ]
+}

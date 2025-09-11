@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "generated_on": "2025-09-11",
+    "source": "Seattle Youth Programs Database",
+    "description": "Youth programs organized by interest categories."
+  },
+  "categories": {
+    "arts": [
+      {
+        "activity_name": "Creative Expressions: After-School Arts",
+        "age_range": "8-12 years",
+        "location": "Seattle Art Center",
+        "dates": {
+          "start": "2025-09-20",
+          "end": "2026-06-15"
+        }
+      }
+    ],
+    "sports": [
+      {
+        "activity_name": "Seattle Youth Soccer League",
+        "age_range": "6-14 years",
+        "location": "Jefferson Park",
+        "dates": {
+          "start": "2025-10-01",
+          "end": "2025-11-30"
+        }
+      }
+    ],
+    "STEM": [
+      {
+        "activity_name": "STEM Explorers Club",
+        "age_range": "10-15 years",
+        "location": "Seattle Community Center",
+        "dates": {
+          "start": "2025-10-15",
+          "end": "2026-04-15"
+        }
+      }
+    ],
+    "outdoor": [
+      {
+        "activity_name": "Nature Navigators",
+        "age_range": "12-18 years",
+        "location": "Discovery Park",
+        "dates": {
+          "start": "2026-06-01",
+          "end": "2026-08-31"
+        }
+      }
+    ]
+  }
+}
