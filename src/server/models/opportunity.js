@@ -23,7 +23,9 @@ const OpportunitySchema = new Schema({
     coordinates: {
       type: { type: String, enum: ['Point'], default: 'Point' },
       coordinates: { type: [Number], index: '2dsphere' }
-    }
+    },
+    // A precomputed Google Maps link for the location (useful when coordinates aren't available)
+    google_maps_url: { type: String }
   },
   // Age range string for simple filtering
   age_range: { type: String },

@@ -12,14 +12,6 @@ const Opportunity = require('../models/opportunity');
 // (__dirname is .../src/server/db). The file actually lives at data/agent_outputs/schema/sample_entries.json
 const samplePath = path.join(__dirname, '..', '..', '..', '..', 'data', 'agent_outputs', 'schema', 'sample_entries.json');
 
-// // If the file isn't present, emit a helpful error with the exact path we tried
-// if (!fs.existsSync(samplePath)) {
-//   console.error('Seed data file not found at:', samplePath);
-//   console.error('Current working directory:', process.cwd());
-//   console.error('Please ensure the file exists and the path is correct relative to the project root.');
-//   process.exit(1);
-// }
-
 // Main async function to run the seeding process
 async function main() {
   // Connect to local MongoDB at the LinkUp database
