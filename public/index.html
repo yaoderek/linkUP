@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LinkUp! - Find Youth Opportunities</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 10 L30 30 L50 50 L70 30 Z' fill='%234ade80'/%3E%3Ccircle cx='50' cy='25' r='8' fill='%2322c55e'/%3E%3Ccircle cx='50' cy='75' r='4' fill='%234ade80'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <!-- Header with Logo -->
         <header class="header">
-            <img src="https://via.placeholder.com/200x60/4ade80/ffffff?text=LinkUp!" alt="LinkUp!" class="logo-image">
+            <h1 class="logo-text">
+                <span class="logo-link">link</span><span class="logo-up">UP</span>
+            </h1>
             <p class="tagline">Connect youth with amazing opportunities in Seattle</p>
         </header>
 
@@ -20,6 +25,9 @@
             <!-- Search Section -->
             <section class="search-section">
                 <div class="search-container">
+                    <div class="search-description">
+                        <p>Ask about an event and find tailor-matched results</p>
+                    </div>
                     <div class="search-box">
                         <input 
                             type="text" 
@@ -37,10 +45,9 @@
                     </div>
                     <div class="search-suggestions">
                         <span class="suggestion-label">Try:</span>
-                        <button class="suggestion-tag" data-query="art classes for kids">Art Classes</button>
-                        <button class="suggestion-tag" data-query="swimming lessons">Swimming</button>
-                        <button class="suggestion-tag" data-query="music lessons">Music</button>
-                        <button class="suggestion-tag" data-query="sports activities">Sports</button>
+                        <button class="suggestion-tag" data-query="i want to swim with my family in ballard">I want to swim with my family in Ballard</button>
+                        <button class="suggestion-tag" data-query="indoor events for book lovers in capitol hill">Indoor events for book lovers in Capitol Hill</button>
+                        <button class="suggestion-tag" data-query="I want to play football in seattle">I want to play football in Seattle</button>
                     </div>
                 </div>
             </section>

@@ -106,6 +106,9 @@ class LinkUpApp {
 
         this.resultsContainer.innerHTML = results.map(result => this.createEventCard(result)).join('');
         this.noResults.classList.add('hidden');
+        
+        // Add click event listeners to event cards
+        this.attachCardClickListeners();
     }
 
     createEventCard(opportunity) {
@@ -114,9 +117,10 @@ class LinkUpApp {
         const ageRange = opportunity.opportunity.age_range || 'All ages';
         const dates = this.formatDates(opportunity.opportunity.dates);
         const categories = opportunity.opportunity.tags?.categories || [];
+        const eventUrl = opportunity.opportunity.url || opportunity.opportunity.website || opportunity.opportunity.registration_url;
         
         return `
-            <div class="event-card" role="article" aria-label="${opportunity.opportunity.activity_name}">
+            <div class="event-card" role="article" aria-label="${opportunity.opportunity.activity_name}" data-url="${eventUrl || ''}" style="cursor: ${eventUrl ? 'pointer' : 'default'}">
                 <div class="match-score" aria-label="Match score: ${score}%">
                     ${score}% match
                 </div>
@@ -168,6 +172,17 @@ class LinkUpApp {
                         ${categories.map(category => `
                             <span class="category-tag">${this.escapeHtml(category)}</span>
                         `).join('')}
+                    </div>
+                ` : ''}
+                
+                ${eventUrl ? `
+                    <div class="event-link-indicator">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15,3 21,3 21,9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                        <span>Click to visit event page</span>
                     </div>
                 ` : ''}
             </div>
@@ -252,6 +267,19 @@ class LinkUpApp {
         this.resultsContainer.innerHTML = '';
         this.noResults.classList.add('hidden');
         this.loadingIndicator.classList.add('hidden');
+    }
+
+    attachCardClickListeners() {
+        const eventCards = this.resultsContainer.querySelectorAll('.event-card[data-url]');
+        eventCards.forEach(card => {
+            const url = card.getAttribute('data-url');
+            if (url) {
+                card.addEventListener('click', () => {
+                    // Open the URL in a new tab
+                    window.open(url, '_blank', 'noopener,noreferrer');
+                });
+            }
+        });
     }
 
     escapeHtml(text) {
