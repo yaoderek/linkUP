@@ -6,11 +6,7 @@
   "activity_description": "...",
   "location": {
     "name": "...",
-    "address": "...",
-    "coordinates": {
-      "type": "Point",
-      "coordinates": [ -122.3321, 47.6062 ]
-    }
+    "address": "..."
   },
   "age_range": "...",
   "dates": {
