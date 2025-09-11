@@ -1,0 +1,42 @@
+{
+  "total_activities": 2228,
+  "organizations": [
+    "Seattle Parks and Recreation"
+  ],
+  "categories_found": [
+    "aquatics",
+    "arts",
+    "boating",
+    "camps",
+    "education",
+    "fitness",
+    "martial_arts",
+    "outdoor",
+    "performing_arts",
+    "sports"
+  ],
+  "demographics_found": [
+    "adult",
+    "early_childhood",
+    "family",
+    "senior",
+    "teen",
+    "toddler",
+    "youth"
+  ],
+  "program_types_found": [
+    "drop-in",
+    "free",
+    "registration"
+  ],
+  "cost_distribution": {
+    "free": 225,
+    "paid": 1929,
+    "unknown": 74
+  },
+  "location_count": 73,
+  "date_range": {
+    "earliest": "2024-09-03",
+    "latest": "2025-07-27"
+  }
+}
