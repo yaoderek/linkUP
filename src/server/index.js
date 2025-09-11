@@ -62,22 +62,25 @@ function scoreOpportunity(opportunity, query) {
 	return overlap * 10 + tagBoost * 5 + recencyBoost;
 }
 
-// POST /api/semantic-search
-// Body: { query: string, limit?: number }
+// GET /api/semantic-search/:searchQuery
+// Route param: searchQuery (natural-language query)
+// Optional query param: ?limit=n
 // Returns: top-matching opportunities according to a simple semantic score.
-app.post('/api/semantic-search', async (req, res) => {
-	// Read query from the request body
-	const { query, limit } = req.body || {};
+app.get('/api/semantic-search/:searchQuery', async (req, res) => {
+	// Extract the searchQuery from the route params and optional limit from query string
+	const query = req.params.searchQuery;
+	const limit = req.query.limit ? Number(req.query.limit) : 10;
+
 	// Validate input
-	if (!query || typeof query !== 'string') return res.status(400).json({ error: 'Missing or invalid query in request body' });
+	if (!query || typeof query !== 'string') return res.status(400).json({ error: 'Missing or invalid searchQuery in URL' });
 
 	// Fetch candidate documents from DB (pull a reasonable number and rank in-app)
 	const candidates = await Opportunity.find().limit(500).exec();
 
-	// Score each candidate
+	// Score each candidate using the processor function and the provided query
 	const scored = candidates.map(doc => ({ score: scoreOpportunity(doc.toObject(), query), doc }));
 
-	// Sort by score descending and return the top `limit` results (default 10)
+	// Sort by score descending and return the top `limit` results
 	scored.sort((a, b) => b.score - a.score);
 	const out = scored.slice(0, limit && Number(limit) > 0 ? Number(limit) : 10).map(s => ({ score: s.score, opportunity: s.doc }));
 
@@ -90,8 +93,6 @@ app.get('/', (req, res) => {
 	// Respond with a small JSON object indicating server is running
 	res.json({ status: 'ok', message: 'LinkUp API is running' });
 });
-
-
 
 // Connect to MongoDB on application start. Use the LinkUp database on localhost.
 mongoose.connect('mongodb://127.0.0.1:27017/LinkUp', { useNewUrlParser: true, useUnifiedTopology: true })
