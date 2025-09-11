@@ -4,8 +4,8 @@ beautifulsoup4>=4.12.0
 lxml>=4.9.0
 
 # Data processing
-typing-extensions>=4.7.0
+pandas>=2.0.0
 
-# Optional: For enhanced parsing and data handling
+# Optional: Enhanced parsing capabilities
 python-dateutil>=2.8.0
 pytz>=2023.3
