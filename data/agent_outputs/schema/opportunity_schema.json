@@ -1,113 +1,36 @@
 {
-  "metadata": {
-    "generated_on": "2025-09-11",
-    "source": "Seattle Youth Programs Database",
-    "description": "Complete dataset of youth opportunities in Seattle organized by categories, age ranges, and locations."
-  },
-  "seattle_youth_opportunities": [
-    {
-      "activity_name": "Creative Expressions: After-School Arts",
-      "activity_description": "Engage in painting, drawing, and mixed media projects to enhance artistic skills and self-expression.",
-      "location": {
-        "name": "Seattle Art Center",
-        "address": "123 Art St, Seattle, WA"
-      },
-      "age_range": "8-12 years",
-      "dates": {
-        "start_date": "2025-09-20",
-        "end_date": "2026-06-15"
-      },
-      "schedule": {
-        "days": ["Mondays", "Wednesdays"],
-        "times": "3:30 PM - 5:30 PM"
-      },
-      "cost": 150,
-      "url": "http://www.seattleartcenter.org/creativeexpressions",
-      "metadata_tags": {
-        "interest_categories": ["arts", "creative expression", "after-school"],
-        "demographics": ["ages 8-12", "family income levels"],
-        "accessibility": ["transportation available", "wheelchair accessible"],
-        "program_type": ["registration required", "seasonal"],
-        "location_tags": ["Seattle Art Center", "Capitol Hill", "transit accessible"]
-      }
-    },
-    {
-      "activity_name": "Seattle Youth Soccer League",
-      "activity_description": "Join local youth to learn soccer skills, teamwork, and sportsmanship while participating in matches.",
-      "location": {
-        "name": "Jefferson Park",
-        "address": "4500 15th Ave S, Seattle, WA"
-      },
-      "age_range": "6-14 years",
-      "dates": {
-        "start_date": "2025-10-01",
-        "end_date": "2025-11-30"
-      },
-      "schedule": {
-        "days": ["Saturdays"],
-        "times": "10:00 AM - 12:00 PM"
-      },
-      "cost": 75,
-      "url": "http://www.seattleyouthsoccer.org",
-      "metadata_tags": {
-        "interest_categories": ["sports", "soccer", "fitness"],
-        "demographics": ["ages 6-14", "inclusive to all skill levels"],
-        "accessibility": ["special accommodations available", "transportation support"],
-        "program_type": ["ongoing", "registration required"],
-        "location_tags": ["Jefferson Park", "South Seattle", "public transit accessible"]
-      }
-    },
-    {
-      "activity_name": "STEM Explorers Club",
-      "activity_description": "Dive into exciting science experiments and technology projects that spark curiosity and innovation.",
-      "location": {
-        "name": "Seattle Community Center",
-        "address": "456 Community Ave, Seattle, WA"
-      },
-      "age_range": "10-15 years",
-      "dates": {
-        "start_date": "2025-10-15",
-        "end_date": "2026-04-15"
-      },
-      "schedule": {
-        "days": ["Tuesdays", "Thursdays"],
-        "times": "4:00 PM - 6:00 PM"
-      },
-      "cost": 100,
-      "url": "http://www.seattlecommunitycenter.org/stemexplorers",
-      "metadata_tags": {
-        "interest_categories": ["STEM", "science", "technology", "hands-on learning"],
-        "demographics": ["ages 10-15", "diverse cultural backgrounds"],
-        "accessibility": ["accessible facilities", "transportation assistance"],
-        "program_type": ["ongoing", "registration required"],
-        "location_tags": ["Seattle Community Center", "Central Seattle", "easily accessible by bus"]
-      }
-    },
-    {
-      "activity_name": "Nature Navigators",
-      "activity_description": "Explore local parks, learn about ecology, and engage in team-building activities while enjoying the great outdoors.",
-      "location": {
-        "name": "Discovery Park",
-        "address": "3801 Discovery Park Blvd, Seattle, WA"
-      },
-      "age_range": "12-18 years",
-      "dates": {
-        "start_date": "2026-06-01",
-        "end_date": "2026-08-31"
-      },
-      "schedule": {
-        "days": ["Fridays"],
-        "times": "9:00 AM - 3:00 PM"
-      },
-      "cost": 200,
-      "url": "http://www.naturenavigators.org",
-      "metadata_tags": {
-        "interest_categories": ["outdoor", "environmental education", "teamwork"],
-        "demographics": ["ages 12-18", "youth from diverse backgrounds"],
-        "accessibility": ["transportation provided", "special dietary needs accommodated"],
-        "program_type": ["seasonal", "registration required"],
-        "location_tags": ["Discovery Park", "Northwest Seattle", "ample parking", "public transport options"]
-      }
+  "_id": ObjectId("..."),
+  "organization_name": "...",
+  "program_description": "...",
+  "activity_name": "...",
+  "activity_description": "...",
+  "location": {
+    "name": "...",
+    "address": "...",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [ -122.3321, 47.6062 ]
     }
-  ]
+  },
+  "age_range": "...",
+  "dates": {
+    "start_date": "YYYY-MM-DD",
+    "end_date": "YYYY-MM-DD"
+  },
+  "schedule": {
+    "days": [ "..." ],
+    "times": "..."
+  },
+  "cost": "...",
+  "url": "...",
+  "tags": {
+    "categories": [ "...", "..." ],
+    "demographics": [ "...", "..." ],
+    "accessibility": [ "...", "..." ],
+    "program_type": [ "...", "..." ]
+  },
+  "last_updated": {
+    "date": "YYYY-MM-DD",
+    "source_url": "..."
+  }
 }
