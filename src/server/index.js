@@ -116,8 +116,9 @@ app.get('/', (req, res) => {
 	res.json({ status: 'ok', message: 'LinkUp API is running' });
 });
 
-// Connect to MongoDB on application start. Use the LinkUp database on localhost.
-mongoose.connect('mongodb://127.0.0.1:27017/LinkUp', { useNewUrlParser: true, useUnifiedTopology: true })
+// Connect to MongoDB on application start. Use environment variable for connection string.
+const mongoUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/LinkUp';
+mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
 	.then(() => {
 		// Start listening only after MongoDB connection is established
 		const port = process.env.PORT || 3000; // Allow overriding port via environment

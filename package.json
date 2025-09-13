@@ -4,8 +4,8 @@
   "description": "Backend for LinkUp: imports opportunities into MongoDB and provides search APIs",
   "main": "src/server/index.js",
   "scripts": {
-    "start": "node src/server/index.js",
-    "dev": "nodemon src/server/index.js",
+    "start": "node demo-server.js",
+    "dev": "nodemon demo-server.js",
     "seed": "node src/server/db/seed.js"
   },
   "dependencies": {
