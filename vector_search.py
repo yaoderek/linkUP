@@ -234,7 +234,7 @@ if __name__ == "__main__":
         if query:
             # Run search and output JSON for Express.js (non-verbose mode)
             # Get the raw results with similarity scores
-            file_path = "/Users/yaoderek/Documents/vscode/youthconnectorhack/data/agent_outputs/seattle_parks_opportunities_with_embeddings.json"
+            file_path = "data/agent_outputs/seattle_parks_opportunities_with_embeddings.json"
             opportunities = load_opportunities_with_embeddings(file_path, verbose=False)
             
             if opportunities:
