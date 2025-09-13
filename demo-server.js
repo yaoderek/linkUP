@@ -117,6 +117,32 @@ app.get('/api/health', (req, res) => {
     });
 });
 
+// Test endpoint to check if JSON file exists
+app.get('/api/test-file', (req, res) => {
+    const fs = require('fs');
+    const path = require('path');
+    
+    const filePath = path.join(__dirname, 'data/agent_outputs/seattle_parks_opportunities_with_embeddings.json');
+    
+    try {
+        const stats = fs.statSync(filePath);
+        const fileSize = stats.size;
+        res.json({
+            success: true,
+            filePath: filePath,
+            fileSize: fileSize,
+            exists: true
+        });
+    } catch (error) {
+        res.json({
+            success: false,
+            filePath: filePath,
+            error: error.message,
+            exists: false
+        });
+    }
+});
+
 // Start the server
 const port = process.env.PORT || 3000;
 const host = process.env.HOST || '0.0.0.0';
