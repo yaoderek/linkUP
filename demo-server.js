@@ -42,6 +42,9 @@ async function vectorSearch(query, limit = 10, minResults = 3, threshold = 0.75)
         
         pythonProcess.on('close', (code) => {
             if (code !== 0) {
+                console.error('Python script failed with code:', code);
+                console.error('Python stderr:', error);
+                console.error('Python stdout:', output);
                 reject(new Error(`Python script failed: ${error}`));
                 return;
             }
@@ -50,7 +53,9 @@ async function vectorSearch(query, limit = 10, minResults = 3, threshold = 0.75)
                 const results = JSON.parse(output);
                 resolve(results);
             } catch (parseError) {
-                reject(new Error(`Failed to parse Python output: ${parseError.message}`));
+                console.error('Failed to parse Python output. Raw output:', output);
+                console.error('Parse error:', parseError.message);
+                reject(new Error(`Failed to parse Python output: ${parseError.message}. Raw output: ${output}`));
             }
         });
     });
