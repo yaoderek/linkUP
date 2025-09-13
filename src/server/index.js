@@ -29,7 +29,6 @@ const Opportunity = require('./models/opportunity');
 
 // Import vector search functionality
 const { spawn } = require('child_process');
-const path = require('path');
 
 // Helper: vector-based semantic search using OpenAI embeddings
 async function vectorSearch(query, limit = 10, minResults = 3, threshold = 0.75) {
